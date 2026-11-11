@@ -46,6 +46,16 @@
           <label for="message">How can we help?</label>
           <textarea id="message" name="message" required></textarea>
 
+          <input type="text" id="companyWebsite" name="companyWebsite" tabindex="-1"  style="display:none;"  autocomplete="off"/>
+           
+          <!-- Hidden field for load time -->
+          <input type="hidden" name="loadTime" id="loadTime">
+
+          <script>
+          // Record the time when the form loads
+          document.getElementById('loadTime').value = Date.now();
+          </script>
+
           <button class="btn" type="submit">Send message</button>
           <p class="form-status" id="form-status" role="status"></p>
         </form>
