@@ -798,12 +798,12 @@ img {
 
   .hero-inner {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 100%;
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
   }
 
