@@ -130,35 +130,17 @@ img {
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-Regular.ttf') format('ttf'),
-         url('./fonts/Manrope-Regular.ttf') format('ttf');
-    font-weight: normal;
+    font-family: 'Inter';
+    font-weight: 400; /* Regular */
     font-style: normal;
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-Bold.ttf') format('ttf'),
-         url('./fonts/Manrope-Bold.ttf') format('ttf');
-    font-weight: bold;
+    font-family: 'Inter';
+    font-weight: 700; /* Bold */
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Space Mono';
-    src: url('./fonts/SpaceMono-Regular.ttf') format('ttf'),
-         url('./fonts/SpaceMono-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Space Mono';
-    src: url('./fonts/SpaceMono-Bold.ttf') format('ttf'),
-         url('./fonts/SpaceMono-Bold.ttf') format('ttf');
-    font-weight: bold;
-    font-style: normal;
+    src: url('../fonts/Inter-Bold.woff2') format('woff2');
 }
 
 /* Header */
