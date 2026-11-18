@@ -197,7 +197,7 @@ img {
 }
 
 .site-header--home .container {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .site-header--home nav {
@@ -205,7 +205,7 @@ img {
 }
 
 .site-header--home .nav-links {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0;
 }
 
@@ -258,8 +258,9 @@ img {
 }
 
 .hero-media {
-  width: 600px;
-  flex-shrink: 0;
+  width: 100%;
+  flex-shrink: 1;
+  max-width: 100%;
 }
 
 .hero-image {
@@ -746,6 +747,13 @@ img {
   padding-top: 24px;
 }
 
+
+@media (max-width: 1100px) {
+    .hero-inner {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -781,6 +789,29 @@ img {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .playbook-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-inner {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 480px) {
@@ -798,5 +829,9 @@ img {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
   }
 }
